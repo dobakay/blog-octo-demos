@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JQM view transitions demo</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="view-container">
+    <div id="home-view" class="view current-view">
+        <!--
+            These links can house used for icon containers
+            or styled like icons etc.
+        -->
+        <div>
+            <a href="#" class="view-link" data-view-link-dest="second-view">Second view</a>
+        </div>
+        <div>
+            <a href="#" class="view-link" data-view-link-dest="third-view" >Third view</a>
+        </div>
+    </div>
+    <div id="second-view" class="view">
+        <!--
+            Note the View Transition data attribute.
+            This will help us further customise our view transitions
+            and of course the look and feel of our app.
+        -->
+        <a href="#" class="view-link" data-view-link-dest="home-view" data-view-transition="slidelefttoright">
+            Home view
+        </a>
+    </div>
+    <div id="third-view" class="view">
+        <a href="#" class="view-link" data-view-link-dest="home-view" data-view-transition="slidelefttoright">
+            Home view
+        </a>
+    </div>
+</div>
+</body>
+</html>
