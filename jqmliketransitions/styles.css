@@ -1,15 +1,20 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     height: 100%;
     width: 100%;
 }
 
-.blue {
+.view.blue {
     background-color: blue;
 }
-.red {
+.view.red {
     background-color: red;
 }
-.green {
+.view.green {
     background-color: green;
 }
 
@@ -51,8 +56,6 @@ body {
     -webkit-perspective: 1000;*/
 }
 
-.
-
 .view.current-view {
     /* MUI IMPORTANTE: Do NOT use display for showing hiding views*/
     -webkit-transform: translate3d(0,0,0);
@@ -66,17 +69,6 @@ body {
     -moz-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
 }
-
-.view {
-    box-sizing: border-box;
-    height: 100%;
-    width: 100%;
-    /* MUI IMPORTANTE: Do NOT use display for showing hiding views*/
-    -webkit-transform: translate3d(-1000%,0,0);
-    -moz-transform: translate3d(-1000%,0,0);
-    transform: translate3d(-1000%,0,0);
-}
-
 /* Move to/from LEFT/RIGHT animations */
 .view-move-to-left {
     -webkit-animation: moveToLeft .6s ease both;
