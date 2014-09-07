@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="view-container">
-    <div id="home-view" class="view red current-view">
+    <div id="home-view" class="view blue current-view">
         <!--
             These links can house used for icon containers
             or styled like icons etc.
@@ -24,20 +24,24 @@
             <a href="#" class="view-link" data-view-link-dest="third-view" >Third view</a>
         </div>
     </div>
-    <div id="second-view" class="view">
+    <div id="second-view" class="view red">
         <!--
             Note the View Transition data attribute.
             This will help us further customise our view transitions
             and of course the look and feel of our app.
         -->
-        <a href="#" class="view-link" data-view-link-dest="home-view" data-view-transition="slidelefttoright">
-            Home view
-        </a>
+        <div>
+            <a href="#" class="view-link" data-view-link-dest="home-view" data-view-transition="slidelefttoright">
+                Home view
+            </a>
+        </div>
     </div>
-    <div id="third-view" class="view">
-        <a href="#" class="view-link" data-view-link-dest="home-view" data-view-transition="slidelefttoright">
-            Home view
-        </a>
+    <div id="third-view" class="view green">
+        <div>
+            <a href="#" class="view-link" data-view-link-dest="home-view" data-view-transition="slidelefttoright">
+                Home view
+            </a>
+        </div>
     </div>
 </div>
     <script type="text/javascript">
